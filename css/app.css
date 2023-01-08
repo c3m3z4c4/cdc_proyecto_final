@@ -1,0 +1,119 @@
+/*reglas generales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+
+:root {
+  --main-text-color: gray;
+  --secondary-text-color: #037BC0;
+  --product-text-color: #fff;
+
+  --prod-bg-color: #2297bc;
+  --prod-btn-bg-color: #9eec00;
+}
+
+
+body {
+	height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+html{
+	height: 100%;
+}
+.center-heading{
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.center-heading > span{
+  color: var(--secondary-text-color);
+}
+.menu{
+  display:flex;
+  align-items:center;
+  justify-content: flex-start;
+}
+.menu > ul{
+  list-style-type: none;
+  text-align: center;
+}
+.menu > ul > li {
+  display: inline;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+.menu > ul > li > a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.hero{
+  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  background-image: url("../assets//principal.jpg");
+  height: 844px;
+	width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Media Query*/
+
+/** Reescribir colores */
+
+/** Productos */
+.products-container {
+  grid-template-columns: ...  ...;
+  /* e.g. 
+      1fr 1fr
+      minmax(10px, 1fr) 3fr
+      repeat(5, 1fr)
+      50px auto 100px 1fr
+  */
+  grid-template-rows: ... ...;
+  /* e.g. 
+      min-content 1fr min-content
+      100px 1fr max-content
+  */
+}
+
+
+.product-main{
+  display:flex;
+}
+
+.product-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  color: var(--product-text-color);
+  background: var(--prod-bg-color);
+}
+.product-desc{
+  padding:0  10px;
+}
+
+.product-price{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product__btn{
+  background: var(--prod-btn-bg-color);
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1px solid var(--main-text-color);
+  color: var(--product-text-color);
+}
+
+.product-img{
+  width: 400px;
+  max-width: 100%
+}
+.product-desc{
+
+}
