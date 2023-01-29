@@ -10,22 +10,48 @@
 
   --prod-bg-color: #2297bc;
   --prod-btn-bg-color: #9eec00;
+
+  --font-raleway: 'Raleway', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
 }
 
 *{
   margin: 0;
   padding: 0;
-  font-family: Lato, sans-serif;
+  /* font-family: Lato, sans-serif; */
+
+}
+html{
+  height: 100%;
+  font-size: 62.5;
 }
 
 body {
 	height: 100%;
+  font-family: var(--font-raleway);
+  line-height: 2;
+
+}
+img{
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
-html{
-	height: 100%;
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-playfair);
+}
+h1{
+  font-size: 5rem;
+}
+h2, h3{
+  font-size: 4rem;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+}
 footer h3,  ul > li{
   list-style: none;
   text-align: center;
@@ -45,28 +71,20 @@ footer h3,  ul > li{
 .center-heading > span{
   color: var(--secondary-text-color);
 }
-.menu{
-  display:flex;
-  align-items:center;
-  justify-content: flex-start;
-}
-.menu > ul{
+
+.menu ul{
   list-style-type: none;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.menu > ul > li {
-  display: inline;
-  text-align: center;
-  margin: 0 10px 0 0;
-}
+
 .menu > ul > li > a {
   color: var(--main-text-color);
   text-decoration: none;
 }
 
 .hero{
-  font-family: 'Playfair Display', serif;
-  font-family: 'Raleway', sans-serif;
   background-image: url("../assets//principal.jpg");
   height: 844px;
 	width: 100%;
@@ -172,3 +190,4 @@ footer h3,  ul > li{
 .product-desc{
 
 }
+
