@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
@@ -14,154 +14,176 @@
     <header>
         <h1 class="center-heading">Tienda de <span>Muebles</span></h1>
     </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="hero">
+
+    <!-- Menu -->
+    <div class="border-top py-4">
+        <div class="navbar navbar-expand-lg container navbar-light"> 
+            <a href="index.html" class="navbar-brand d-lg-none fs-2 fw-bold text-uppercase">Tienda Muebles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navegacion">
+                <nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
+                    <a class="text-dark text-decoration-none nav-link active" href="#">Inicio</a>
+                    <a class="text-dark text-decoration-none nav-link" href="#">Nosotros</a>
+                    <a class="text-dark text-decoration-none nav-link" href="#">Tienda</a>
+                    <a class="text-dark text-decoration-none nav-link" href="#">Blog</a>
+                    <a class="text-dark text-decoration-none nav-link" href="#">Galeria</a>
+                    <a class="text-dark text-decoration-none nav-link" href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
     </div>
-    <h2 class="center-heading">Nuestros Productos</h2>
-    <main class="products-grid">
-        <div class="products-item-1">
-            <div class=" product-img">
-                <img class="image" src="./assets/producto1.jpg" alt="Producto 1">
+
+
+    <div class="hero"></div>
+    <main class="container-xl py-5 products">
+        <h2 class="text-center my-5">Nuestros Productos</h2>
+            <!-- Producto 1 -->
+            <div class="row g-0 pt-5 md-4">
+                <div class="col-md-8">
+                    <img class="img-fluid" src="./assets/producto1.jpg" alt="Producto 1">
+                </div>
+                <div class="col-md-4 bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                    <h3 >Producto 1</h3>
+                    <p class="product-desc">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                    labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                    animcupidatat excepteur officia. </p>
+                    <span class="fw-bold fs-1">$12,000.00</span>
+                    <a href="#" class="btn btn-success fs-3 fw-bold text-uppercase py-3">Agregar a carrito</a>
+                </div>
             </div>
-            <div class="product-text">
-                <h3>Producto 1</h3>
-                <p class="product-desc">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-                animcupidatat excepteur officia. </p>
-                <span class="product-price">$12,000.00</span>
-                <button type="button" class="› product__btn">Agregar a carrito</button>
+            <!-- Productos 2 y 3 -->
+            <div class="py-3 row">
+                <div class="mb-4 col-md-6">
+                    <div class="card">
+                        <img src="./assets/producto2.jpg" alt="Producto 2" class="card-img-top">
+                    </div>
+                    <div class="card-body text-center bg-primary text-white p-5">
+                        <h3>Producto 2</h3>
+                        <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                        labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                        animcupidatat excepteur officia. </p>
+                        <span class="fw-bold fs-1">$12,000.00</span>
+                        <a href="#" class="btn btn-success fs-3 fw-bold text-uppercase py-3 w-100">Agregar a carrito</a>
+                    </div>
+                </div>
+                <div class="mb-4 col-md-6">
+                    <div class="card">
+                        <img src="./assets/producto3.jpg" alt="Producto 2" class="card-img-top">
+                    </div>
+                    <div class="card-body text-center bg-primary text-white p-5">
+                        <h3>Producto 3</h3>
+                        <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                        labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                        animcupidatat excepteur officia. </p>
+                        <span class="fw-bold fs-1">$12,000.00</span>
+                        <a href="#" class="btn btn-success fs-3 fw-bold text-uppercase py-3 w-100">Agregar a carrito</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="products-item-2 product-img">
-            <div class="img-container">
-                <img class="image" src="./assets/producto2.jpg" alt="Producto 1">
+            <!-- Contenedor de 3 productos -->
+            <div class="py-3 row">
+                <div class="mb-4 col-md-4">
+                    <div class="card">
+                        <img src="./assets/producto2.jpg" alt="Producto 2" class="card-img-top">
+                    </div>
+                    <div class="card-body text-center bg-primary text-white p-5">
+                        <h3>Producto 2</h3>
+                        <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                        labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                        animcupidatat excepteur officia. </p>
+                        <span class="fw-bold fs-1">$12,000.00</span>
+                        <a href="#" class="btn btn-success fs-3 fw-bold text-uppercase py-3 w-100">Agregar a carrito</a>
+                    </div>
+                </div>
+                <div class="mb-4 col-md-4">
+                    <div class="card">
+                        <img src="./assets/producto3.jpg" alt="Producto 2" class="card-img-top">
+                    </div>
+                    <div class="card-body text-center bg-primary text-white p-5">
+                        <h3>Producto 3</h3>
+                        <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                        labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                        animcupidatat excepteur officia. </p>
+                        <span class="fw-bold fs-1">$12,000.00</span>
+                        <a href="#" class="btn btn-success fs-3 fw-bold text-uppercase py-3 w-100">Agregar a carrito</a>
+                    </div>
+                </div>
+                <div class="mb-4 col-md-4">
+                    <div class="card">
+                        <img src="./assets/producto3.jpg" alt="Producto 2" class="card-img-top">
+                    </div>
+                    <div class="card-body text-center bg-primary text-white p-5">
+                        <h3>Producto 3</h3>
+                        <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                        labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                        animcupidatat excepteur officia. </p>
+                        <span class="fw-bold fs-1">$12,000.00</span>
+                        <a href="#" class="btn btn-success fs-3 fw-bold text-uppercase py-3 w-100">Agregar a carrito</a>
+                    </div>
+                </div>
             </div>
-            <div class="product-text">
-                <h3>Producto 2</h3>
-                <p class="product-desc">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-                animcupidatat excepteur officia. </p>
-                <span class="product-price">$12,000.00</span>
-                <button type="button" class="› product__btn">Agregar a carrito</button>
-            </div>
-        </div>
-        <div class="products-item-3 product-img">
-            <div class="img-container">
-                <img class="image" src="./assets/producto3.jpg" alt="Producto 1">
-            </div>
-            <div class="product-text">
-                <h3>Producto 3</h3>
-                <p class="product-desc">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-                animcupidatat excepteur officia. </p>
-                <span class="product-price">$12,000.00</span>
-                <button type="button" class="› product__btn">Agregar a carrito</button>
-            </div>
-        </div>
-        <div class="products-item-4 product-img">
-            <div class="img-container">
-                <img class="image" src="./assets/producto4.jpg" alt="Producto 1">
-            </div>
-            <div class="product-text">
-                <h3>Producto 4</h3>
-                <p class="product-desc">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-                animcupidatat excepteur officia. </p>
-                <span class="product-price">$12,000.00</span>
-                <button type="button" class="› product__btn">Agregar a carrito</button>
-            </div>
-        </div>
-        <div class="products-item-5 product-img">
-            <div class="img-container">
-                <img class="image" src="./assets/producto5.jpg" alt="Producto 1">
-            </div>
-            <div class="product-text">
-                <h3>Producto 5</h3>
-                <p class="product-desc">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-                animcupidatat excepteur officia. </p>
-                <span class="product-price">$12,000.00</span>
-                <button type="button" class="› product__btn">Agregar a carrito</button>
-            </div>
-        </div>
-        <div class="products-item-6 product-img">
-            <div class="img-container">
-                <img class="image" src="./assets/producto6.jpg" alt="Producto 1">
-            </div>
-            <div class="product-text">
-                <h3>Producto 6</h3>
-                <p class="product-desc">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-                animcupidatat excepteur officia. </p>
-                <span class="product-price">$12,000.00</span>
-                <button type="button" class="› product__btn">Agregar a carrito</button>
-            </div>
-        </div>
     </main>
-    <section class="categorias">
-        <h2>Categorias de Productos</h2>
-        <div class="row">
-            <div class="col">
-                <img src="./assets/categoria1.jpg" alt="Imagen Categoria 1">
-                <a href="&"><h3>Oficina</h3></a>
+    <section class="container-xl">
+        <h2 class="text-center py-5">Categorias</h2>
+            <div class="mt-5 row">
+                <div class="mb-4 col-md-4">
+                    <div class="overflow-hidden">
+                        <img src="./assets/categoria1.jpg" alt="Oficina" class="img-fluid">
+                    </div>
+                    <a href="#" class="text-dark text-decoration-none text-center fs-2 d-block py-3">Oficina</a>
+                </div>
+                <div class="mb-4 col-md-4">
+                    <div class="overflow-hidden">
+                        <img src="./assets/categoria2.jpg" alt="Hogar" class="img-fluid">
+                    </div>
+                    <a href="#" class="text-dark text-decoration-none text-center fs-2 d-block py-3">Hogar</a>
+                </div>
+                <div class="mb-4 col-md-4">
+                    <div class="overflow-hidden">
+                        <img src="./assets/categoria3.jpg" alt="Cocina" class="img-fluid">
+                    </div>
+                    <a href="#" class="text-dark text-decoration-none text-center fs-2 d-block py-3">Cocina</a>
+                </div>
             </div>
-            <div class="col">
-                <img src="./assets/categoria2.jpg" alt="Imagen Categoria 1">
-                <a href="&"><h3>Hogar</h3></a>
-            </div>
-            <div class="col">
-                <img src="./assets/categoria3.jpg" alt="Imagen Categoria 1">
-                <a href="&"><h3>Cocina</h3></a>
-            </div>
-        </div>
-    </section>
+        </section>
     <footer>
         <div class="row">
-            <div class="col">
-                <h3>Categorias</h3>
-                <nav>
-                    <ul>
-                        <li>Cocina</li>
-                        <li>Oficina</li>
-                        <li>Jardin</li>
-                        <li>Cochera</li>
-                        <li>Dormitorios</li>
-                    </ul>
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h3 >Categorias</h3>
+                <nav class="navbar-nav container d-flex flex-column justify-content-md-between text-center">
+                    <a class="text-dark text-decoration-none" href="#">Cocina</a>
+                    <a class="text-dark text-decoration-none" href="#">Oficina</a>
+                    <a class="text-dark text-decoration-none" href="#">Jardin</a>
+                    <a class="text-dark text-decoration-none" href="#">Cochera</a>
+                    <a class="text-dark text-decoration-none" href="#">Dormitorios</a>
                 </nav>
+                
             </div>
-            <div class="col">
+            <div class="col-md-4 d-flex flex-column align-items-center" >
                 <h3>Sobre nosotros</h3>
-                <nav>
-                    <ul>
-                        <li>Nuestra historia</li>
-                        <li>Mision</li>
-                        <li>Vision y valores</li>
-                        <li>Carrera</li>
-                        <li>Politicas de privacidad</li>
-                        <li>Terminos del servicio</li>
-                    </ul>
+                <nav class="navbar-nav container d-flex flex-column justify-content-md-between text-center">
+                    <a class="text-dark text-decoration-none" href="#">Nuestra historia</a>
+                    <a class="text-dark text-decoration-none" href="#">Mision</a>
+                    <a class="text-dark text-decoration-none" href="#">Vision y valores</a>
+                    <a class="text-dark text-decoration-none" href="#">Carrera</a>
+                    <a class="text-dark text-decoration-none" href="#">Politicas de privacidad</a>
+                    <a class="text-dark text-decoration-none" href="#">Terminos del servicio</a>
                 </nav>
             </div>
-            <div class="col">
-                <h3>Soporte</h3>
-                <nav>
-                    <ul>
-                        <li>Preguntas frecuentes</li>
-                        <li>Ayuda en linea</li>
-                        <li>Confianza y seguridad</li>
-                    </ul>
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h3 class="text-center">Soporte</h3>
+                <nav class="navbar-nav container d-flex flex-column justify-content-md-between text-center">
+                    <a class="text-dark text-decoration-none" href="#">Preguntas frecuentes</a>
+                    <a class="text-dark text-decoration-none" href="#">Ayuda en linea</a>
+                    <a class="text-dark text-decoration-none" href="#">onfianza y seguridad</a>
                 </nav>
             </div>
+        </div>
+        <br/>
+        <div class="copyright text-center">
+            <p>Todos los derechos reservados TiendaMuebles</p>
         </div>
     </footer>
     <script src="./js/app.js"></script>

@@ -14,7 +14,11 @@
   --font-raleway: 'Raleway', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
   --font-playfair: 'Playfair Display', serif;
+
+  --bs-blue: #037BC0 !important;
+  --bs-green: #8cbc00 !important;
 }
+
 
 *{
   margin: 0;
@@ -23,29 +27,30 @@
 
 }
 html{
-  height: 100%;
   font-size: 62.5;
 }
 
 body {
 	height: 100%;
-  font-family: var(--font-raleway);
+  font-family: var(--font-raleway) !important;
   line-height: 2;
 
 }
-img{
-  width: 1.6rem;
-  height: 1.6rem;
-}
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
   font-family: var(--font-playfair);
+}
+h1{
+  font-size: 3.8rem;
 }
 h1{
   font-size: 5rem;
 }
-h2, h3{
-  font-size: 4rem;
+h2{
+  font-size: 3.2rem;
+}
+h3{
+  font-size: 2.4rem;
 }
 
 footer{
@@ -57,11 +62,6 @@ footer h3,  ul > li{
   text-align: center;
 }
 
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: visible;
-}
 .center-heading{
   margin: 0 auto;
   text-align: center;
@@ -71,46 +71,58 @@ footer h3,  ul > li{
 .center-heading > span{
   color: var(--secondary-text-color);
 }
-
-.menu ul{
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.menu{
+  color: var(--bs-blue);
 }
 
-.menu > ul > li > a {
-  color: var(--main-text-color);
-  text-decoration: none;
-}
 
 .hero{
   background-image: url("../assets//principal.jpg");
-  height: 844px;
-	width: 100%;
-  background-repeat: no-repeat;
+  height: 30rem;
   background-size: cover;
+  background-position: center center;
+}
+
+.text-center{
+  text-align: center;
 }
 
 /*Media Query*/
+@media screen and (min-width: 768px){
+  h1{
+    font-size: 5rem;
+  }
+  h2{
+    font-size: 4rem;
+  }
+  h3{
+    font-size: 3.2rem;
+  }
+  .products img{
+    height: 45rem;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
 
 /** Reescribir colores */
+.text-primary .heading{
+  color: var(--bs-blue) !important;
+}
+.btn-success{
+  background-color: var(--bs-green) !important;
+}
+.btn-primary .bg-primary{
+  background-color: var(--bs-blue) !important;
+}
+/** Productos */ 
 
-/** Productos */
-
-/* .products-grid {
-
-  display: grid;
-  grid-template-columns: 50px repeat(auto-fill, minmax(300px, 1fr)) 50px;
-  grid-template-rows: auto;
-  gap: 10px;
-} */
 
 .image{
   width: 480px;
   height: 334px;
-  /* margin-left: auto;
-  margin-top: -150px; */
+
 }
 
 .product-img{
@@ -120,74 +132,5 @@ footer h3,  ul > li{
   overflow: hidden;
 }
 
-.products-item-1 {
-  grid-area: products-item-1;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
-}
-.products-item-2 {
-  grid-area: products-item-2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.products-item-3 {
-  grid-area: products-item-3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.products-grid {
-  margin: 0 10%;
-  display: grid;
-  grid-template-rows: 200px;
-  row-gap: 50px;
-  grid-template-areas: 
-    "products-item-1 products-item-1 products-item-1"
-    " products-item-2 . products-item-3"
-    " products-item-4 products-item-5 products-item-5";
-}
-
-
-.product-main{
-  display:flex;
-}
-
-.product-text{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align:center;
-  color: var(--product-text-color);
-  background: var(--prod-bg-color);
-  padding: 10px 0;
-  height: 400px;
-}
-.product-desc{
-  padding:0  10px;
-}
-
-.product-price{
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.product__btn{
-  background: var(--prod-btn-bg-color);
-  border-radius: 10px;
-  padding: 10px 15px;
-  border: 1px solid var(--main-text-color);
-  color: var(--product-text-color);
-}
-
-
-.product-desc{
-
-}
 
