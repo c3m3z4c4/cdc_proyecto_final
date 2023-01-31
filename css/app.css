@@ -16,9 +16,8 @@
 *{
   margin: 0;
   padding: 0;
-  /* font-family: Lato, sans-serif; */
-
 }
+
 html{
   font-size: 62.5;
 }
@@ -65,7 +64,7 @@ footer h3,  ul > li{
   color: var(--bs-blue);
 }
 .menu{
-  color: var(--bs-blue);
+  color: var(--bs-blue) !important;
 }
 
 
@@ -106,9 +105,16 @@ footer h3,  ul > li{
 .btn-success{
   background-color: var(--bs-green) !important;
 }
-.btn-primary .bg-primary{
+.btn-primary {
   background-color: var(--bs-blue) !important;
 }
+
+/* No me esta agarrando este important */
+.bg-primary{
+  background-color: var(--bs-blue) !important;
+}
+
+
 /** Productos */ 
 
 
