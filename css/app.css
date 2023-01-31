@@ -4,13 +4,6 @@
 
 
 :root {
-  --main-text-color: gray;
-  --secondary-text-color: #037BC0;
-  --product-text-color: #fff;
-
-  --prod-bg-color: #2297bc;
-  --prod-btn-bg-color: #9eec00;
-
   --font-raleway: 'Raleway', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
   --font-playfair: 'Playfair Display', serif;
@@ -69,7 +62,7 @@ footer h3,  ul > li{
 }
 
 .center-heading > span{
-  color: var(--secondary-text-color);
+  color: var(--bs-blue);
 }
 .menu{
   color: var(--bs-blue);
@@ -119,16 +112,12 @@ footer h3,  ul > li{
 /** Productos */ 
 
 
-.image{
-  width: 480px;
-  height: 334px;
 
-}
 
 .product-img{
   width: 400px;
   max-width: 100%;
-  height: 400px;
+  height: 334px;
   overflow: hidden;
 }
 
