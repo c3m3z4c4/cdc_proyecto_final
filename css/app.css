@@ -69,10 +69,10 @@ footer h3,  ul > li{
 
 
 .hero{
-  background-image: url("../assets//principal.jpg");
+  /* background-image: url("../assets//principal.jpg"); */
   height: 30rem;
-  background-size: cover;
-  background-position: center center;
+  /* background-size: cover; */
+  /* background-position: center center; */
 }
 
 .text-center{
