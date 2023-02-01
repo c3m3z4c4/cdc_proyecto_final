@@ -8,8 +8,8 @@
   --font-poppins: 'Poppins', sans-serif;
   --font-playfair: 'Playfair Display', serif;
 
-  --bs-blue: #037BC0 !important;
-  --bs-green: #8cbc00 !important;
+  --bs-blue: #037BC0;
+  --bs-green: #8cbc00;
 }
 
 
@@ -19,11 +19,12 @@
 }
 
 html{
-  font-size: 62.5;
+  font-size: 62.5%;
 }
 
 body {
 	height: 100%;
+  font-size: 1.6rem;
   font-family: var(--font-raleway) !important;
   line-height: 2;
 
